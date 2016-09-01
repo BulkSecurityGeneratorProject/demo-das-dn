@@ -1,0 +1,12 @@
+version: '2'
+services:
+    demo-das-dn-postgresql:
+        container_name: demo-das-dn-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/demo-das-dn/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=demo-das-dn
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
